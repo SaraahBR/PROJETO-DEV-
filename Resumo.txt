@@ -1,0 +1,102 @@
+
+[Metadados, SGBD, DDL, DML]
+
+ O SQL permite criar bancos de dados, tabelas, colunas, índices e outras 
+estruturas necessárias para armazenar e organizar os dados de forma adequada.
+
+Schema e Metadados: 
+
+O esquema (schema) de um banco de dados é uma estrutura lógica que define a 
+organização dos objetos de banco de dados, como tabelas, visões, procedimentos 
+armazenados, entre outros. Ele descreve a estrutura dos dados e os relacionamentos
+entre os objetos.
+
+Os metadados, por outro lado, são informações sobre os dados e objetos de um banco
+de dados. Eles fornecem detalhes sobre a estrutura, definição e propriedades dos 
+objetos do banco de dados, bem como informações sobre restrições, relacionamentos 
+e outras características importantes.
+
+Dentro do Metadados são inseridos os dados (do usuario), que logo se conecta ao 
+Schema, que se preenche de tabelas para adicionar campos e atributos, em alguns 
+casos de tabelas muito grandes, é usado o índice (Index).
+
+
+Existem bancos de dados que tem Procedure, Function e também 
+
+Diferença de Procedure e Function: 
+
+Procedure:
+
+É um bloco de código que executa uma série de instruções.
+Pode receber parâmetros, mas não retorna um valor.
+É usado para executar ações e modificar o estado do sistema.
+Pode ter efeitos colaterais.
+Não pode ser usado em expressões matemáticas ou em cláusulas SELECT de banco 
+de dados.
+
+Function:
+
+É um bloco de código que retorna um valor.
+Pode receber parâmetros.
+É usado para calcular e retornar um resultado.
+Não modifica o estado do sistema.
+Não possui efeitos colaterais.
+Pode ser usado em expressões matemáticas ou em cláusulas SELECT de banco de dados.
+
+DDL E DML: 
+
+DDL (Data Definition Language):
+
+É uma parte do SQL que é usada para definir e modificar a estrutura dos objetos de
+banco de dados.
+Inclui comandos como CREATE, ALTER e DROP para criar, modificar e excluir objetos 
+como tabelas, índices, visões, procedimentos armazenados e outros elementos do 
+banco de dados.
+O DDL é responsável por definir a estrutura dos dados e como eles são armazenados, mas não manipula os próprios dados.
+As alterações feitas com DDL têm um impacto duradouro na estrutura do banco de 
+dados.
+Exemplos de comandos DDL incluem CREATE TABLE, ALTER TABLE, CREATE INDEX e 
+DROP TABLE.
+
+
+DML (Data Manipulation Language):
+
+É uma parte do SQL que é usada para manipular os dados dentro dos objetos de banco
+de dados.
+Inclui comandos como SELECT, INSERT, UPDATE e DELETE para recuperar, inserir, 
+atualizar e excluir dados em uma tabela.
+O DML lida com as operações de manipulação dos dados, como inserção, atualização 
+e exclusão de registros.
+As alterações feitas com DML podem ser temporárias e podem ser desfeitas por meio
+de transações.
+Exemplos de comandos DML incluem SELECT, INSERT INTO, UPDATE e DELETE FROM.
+
+TIPOS PRIMÁRIOS DE DADOS: 
+
+(Integer, Date, Time, Varchar(x), Numeric (x,d), char (x)
+
+Integer = Armazenar valores inteiros
+Date = Armazenar Data
+Time = Armazena hora
+
+CHAR:
+
+É um tipo de dado de comprimento fixo.
+Ocupa um espaço de armazenamento fixo, independentemente do número de caracteres 
+armazenados.
+Preenche os espaços em branco à direita até atingir seu tamanho máximo.
+É adequado para armazenar valores de tamanho fixo, como códigos ou abreviações.
+É recomendado quando os valores armazenados possuem sempre o mesmo comprimento.
+
+VARCHAR:
+
+É um tipo de dado de comprimento variável.
+Ocupa um espaço de armazenamento apenas para os caracteres reais armazenados, mais
+um pequeno overhead adicional para indicar o tamanho do valor.
+Não preenche espaços em branco e armazena apenas os caracteres reais fornecidos.
+É adequado para armazenar valores de tamanho variável, como nomes, descrições ou 
+comentários.
+É recomendado quando os valores armazenados têm comprimentos diferentes.
+mesmo se voce colocar 20, vai ser ocupado 50. 
+
+Numeric = Tamanho do número que quero alocar.
